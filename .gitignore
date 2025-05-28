@@ -1,6 +1,12 @@
-node_modules
-dist
-
-*.log
+.cache
 .DS_Store
 .eslintcache
+.idea
+*.log
+*.tgz
+coverage
+dist
+lib-cov
+logs
+node_modules
+temp
