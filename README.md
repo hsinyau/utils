@@ -1,7 +1,8 @@
 # starter-ts
 
-[![Unit Test](https://github.com/hsinyau/starter-ts/actions/workflows/unit-test.yml/badge.svg)](https://github.com/hsinyau/stsrter-ts/actions/workflows/unit-test.yml)
+[![Unit Test](https://github.com/hsinyau/starter-ts/actions/workflows/unit-test.yml/badge.svg)](https://github.com/hsinyau/starter-ts/actions/workflows/unit-test.yml)
 
+Starter template for TypeScript library
 Starter template for TypeScript library
 
 Features:
