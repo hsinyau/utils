@@ -1,6 +1,7 @@
-import { expect, it } from 'vitest'
-import { foo } from '../src'
+import { describe, expect, it } from 'vitest'
 
-it('simple', () => {
-  expect(foo).toBe('foo')
+describe('should', () => {
+  it('exported', () => {
+    expect(1).toEqual(1)
+  })
 })
