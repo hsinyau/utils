@@ -1,4 +1,4 @@
 {
-  extends: ['github>hsinyau/renovate-config'],
-  automerge: true,
+  "extends": ["github>hsinyau/renovate-config"],
+  "automerge": true
 }
