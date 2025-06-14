@@ -1,18 +1,18 @@
 {
-  "name": "ts-starter",
+  "name": "@hsinyau/utils",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "packageManager": "pnpm@10.11.0",
-  "description": "My typescript library sterter",
+  "description": "My utils library",
   "author": "Hsinyau <hi@hsinyau.com>",
   "license": "MIT",
-  "homepage": "https://github.com/hsinyau/ts-starter#readme",
+  "homepage": "https://github.com/hsinyau/@hsinyau/utils#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hsinyau/ts-starter.git"
+    "url": "git+https://github.com/hsinyau/@hsinyau/utils.git"
   },
   "bugs": {
-    "url": "https://github.com/hsinyau/ts-starter/issues"
+    "url": "https://github.com/hsinyau/@hsinyau/utils/issues"
   },
   "exports": {
     ".": "./dist/index.js",
@@ -39,6 +39,10 @@
     "typecheck": "tsc --noEmit",
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.2",
