@@ -1,18 +1,18 @@
 {
-  "name": "@hsinyau/utils",
+  "name": "utils",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@10.11.0",
   "description": "My utils library",
   "author": "Hsinyau <hi@hsinyau.com>",
   "license": "MIT",
-  "homepage": "https://github.com/hsinyau/@hsinyau/utils#readme",
+  "homepage": "https://github.com/hsinyau/utils#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hsinyau/@hsinyau/utils.git"
+    "url": "git+https://github.com/hsinyau/utils.git"
   },
   "bugs": {
-    "url": "https://github.com/hsinyau/@hsinyau/utils/issues"
+    "url": "https://github.com/hsinyau/utils/issues"
   },
   "exports": {
     ".": "./dist/index.js",
