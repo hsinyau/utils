@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@hsinyau/utils",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@10.11.0",
