@@ -1,4 +1,4 @@
-import { padZero } from '~/string/pad-zero'
+import { padZero } from '../string/pad-zero'
 import { isValidTimestamp } from './is-valid-timestamp'
 
 /**

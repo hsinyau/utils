@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ensurePrefix, ensureSuffix, padZero, randomString, slash } from '../src/string'
+import { ensurePrefix, ensureSuffix, padZero, random, slash } from '../src/string'
 
 describe('string', () => {
   it('slash', () => {
@@ -8,9 +8,9 @@ describe('string', () => {
     expect(slash('\\a\\b\\c')).toEqual('/a/b/c')
   })
 
-  it('randomString', () => {
-    expect(randomString(16)).toHaveLength(16)
-    expect(randomString(16)).toMatch(/^[\w-]+$/)
+  it('random', () => {
+    expect(random(16)).toHaveLength(16)
+    expect(random(16)).toMatch(/^[\w-]+$/)
   })
 
   it('ensurePrefix', () => {
