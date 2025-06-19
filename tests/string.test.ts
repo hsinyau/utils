@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ensurePrefix, ensureSuffix, padZero, random, slash } from '../src/string'
+import { camelize, dasherize, ensurePrefix, ensureSuffix, padZero, random, slash, underscored } from '../src/string'
 
 describe('string', () => {
   it('slash', () => {
@@ -28,5 +28,34 @@ describe('string', () => {
     expect(padZero(13579, 8, 'end')).toEqual('13579000')
     expect(padZero(13579, 10, 'start')).toEqual('0000013579')
     expect(padZero(24680, 0, 'end')).toEqual('24680')
+  })
+
+  it('camelize', () => {
+    expect(camelize('foo-bar')).toEqual('fooBar')
+    expect(camelize('foo_bar')).toEqual('fooBar')
+    expect(camelize('fooBar')).toEqual('fooBar')
+    expect(camelize('foo bar')).toEqual('foo bar')
+    expect(camelize('foo-bar-baz')).toEqual('fooBarBaz')
+    expect(camelize('foo_bar_baz')).toEqual('fooBarBaz')
+    expect(camelize('fooBarBaz')).toEqual('fooBarBaz')
+    expect(camelize('foo bar baz')).toEqual('foo bar baz')
+  })
+
+  it('underscored', () => {
+    expect(underscored('fooBar')).toEqual('foo_bar')
+    expect(underscored('fooBarBaz')).toEqual('foo_bar_baz')
+    expect(underscored('foo bar')).toEqual('foo bar')
+    expect(underscored('FooBar')).toEqual('foo_bar')
+    expect(underscored('OvO')).toEqual('ov_o')
+  })
+
+  it('dasherize', () => {
+    expect(dasherize('fooBar')).toEqual('foo-bar')
+    expect(dasherize('fooBarBaz')).toEqual('foo-bar-baz')
+    expect(dasherize('foo bar')).toEqual('foo bar')
+    expect(dasherize('FooBar')).toEqual('foo-bar')
+    expect(dasherize('foo-bar')).toEqual('foo-bar')
+    expect(dasherize('foo_bar')).toEqual('foo-bar')
+    expect(dasherize('foo bar baz')).toEqual('foo bar baz')
   })
 })
